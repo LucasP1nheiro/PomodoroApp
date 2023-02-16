@@ -1,5 +1,6 @@
 import * as Slider from '@radix-ui/react-slider';
 import { useEffect, useState, useContext, createContext } from 'react';
+import { DurationContext } from '../context/DurationContext';
 import TimesContextProvider from '../context/TimesContext';
 import { TimesContext } from '../context/TimesContext';
 
@@ -16,20 +17,26 @@ const CustomTimer = ({ description, activateButton, unactivateButton}: CustomTim
   const [value, setValue] = useState<number[]>([30]);
   const [number, setNumber] = useState(30);
 
-  const { PomodoroContext, setPomodoroContext, setShortBreakContext, setLongBreakContext } = useContext(TimesContext);
+  const {setPomodoroContext, setShortBreakContext, setLongBreakContext } = useContext(TimesContext);
+  const {setPomodoroDuration, setShortBreakDuration, setLongBreakDuration} = useContext(DurationContext);
+  
+
   
   function changeCustomTimer(description: string, num: number) {
     
     if (description === 'Pomodoro') {
       setPomodoroContext(num * 60)
+      setPomodoroDuration(num * 60)
     }
 
     if (description === 'Short Break') {
       setShortBreakContext(num * 60)
+      setShortBreakDuration(num * 60)
     }
 
     if (description === 'Long Break') {
       setLongBreakContext(num * 60)
+      setLongBreakDuration(num * 60)
     }
   }
 

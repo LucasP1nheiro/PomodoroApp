@@ -4,6 +4,7 @@ import PossiblePictures from './PossiblePictures'
 import TimesContextProvider, { TimesContext } from '../context/TimesContext'
 import { Check, Repeat } from 'phosphor-react'
 import { PicturesContext } from '../context/PicturesContext'
+import {DurationContext} from '../context/DurationContext'
 
 //pictures
 import aurora from 'src/assets/aurora.jpg'
@@ -17,6 +18,7 @@ import lake from '../assets/lake.jpg'
 import landscape from '../assets/landscape.jpg'
 import sky from '../assets/sky.jpg'
 
+
 interface PopoverProps {
   popoverDisplay: string
 }
@@ -24,9 +26,10 @@ interface PopoverProps {
 const Popover = ({ popoverDisplay }: PopoverProps) => {
   const [activateButton, setActivateButton] = useState(false)
   const { setPomodoroContext, setShortBreakContext, setLongBreakContext } = useContext(TimesContext)
+  const {setPomodoroDuration, setShortBreakDuration, setLongBreakDuration} = useContext(DurationContext);
   const { picture } = useContext(PicturesContext)
 
-  console.log(picture)
+  
   
   function unactivateButton() {
     setActivateButton(false)
@@ -36,6 +39,9 @@ const Popover = ({ popoverDisplay }: PopoverProps) => {
     setShortBreakContext(5 * 60)
     setLongBreakContext(10 * 60)
     setPomodoroContext(25 * 60)
+    setShortBreakDuration(5 * 60)
+    setLongBreakDuration(10 * 60)
+    setPomodoroDuration(25 * 60)
   }
 
   return (

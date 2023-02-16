@@ -5,7 +5,7 @@ import { PicturesContext } from '../context/PicturesContext'
 
 
 //pictures
-import aurora from '../assets/aurora.jpg'
+
 import blue from '../assets/blue.jpg'
 import forest from '../assets/forest.jpg'
 import sunset from '../assets/sunset.jpg'
@@ -22,7 +22,7 @@ import sky from '../assets/sky.jpg'
 
 
 const PossiblePictures = () => {
-  const pictureArray = [ forest, sunset, trees, bloodymoon, bridge, lake, landscape, sky, aurora, blue]
+  const pictureArray = [ forest, sunset, trees, bloodymoon, bridge, lake, landscape, sky, blue]
   const { setPicture, picture } = useContext(PicturesContext)
   const [reRender, setReRender] = useState(0)
 

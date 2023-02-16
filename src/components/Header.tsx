@@ -15,7 +15,6 @@ const Header = ({ handleChange }: HeaderProps) => {
         onClick={() => handleChange('Pomodoro')}
         
         className="w-full sm:w-auto md:w-1/4 xl:text-3xl text-white border-white border-2 font-bold bg-white/10 p-2 xl:py-4 rounded-lg hover:bg-white hover:text-zinc-600 transition-all duration-500 md:text-xl sm:text-lg"
-
       >
         Pomodoro
       </button>
