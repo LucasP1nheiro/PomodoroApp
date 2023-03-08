@@ -104,7 +104,7 @@ const Timer = ({ description}: TimerProps) => {
   
 
   return (
-    <div className="flex flex-col justify-center items-center lg:gap-20 md:gap-12 gap-5 sm:p-12 md:p-16 lg:p-20 xl:p-24 2xl:p-40 w-1/3 rounded-full">
+    <div className="flex flex-col justify-center items-center lg:gap-20 md:gap-12 gap-10 sm:p-12 md:p-16 lg:p-20 xl:p-24 2xl:p-40 w-1/3">
       {description === 'Pomodoro' && (
         <CountdownCircleTimer
         isPlaying={play}

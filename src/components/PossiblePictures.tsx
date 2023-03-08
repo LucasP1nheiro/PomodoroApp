@@ -45,7 +45,7 @@ const PossiblePictures = () => {
   return (
     <div className="h-full w-full flex justify-center gap-2 sm:gap-4 md:gap-2 lg:gap-4 items-center md:py-0 sm:py-1">
       <button onClick={handlePrevClick}>
-        <div className='bg-white z-50 opacity-100  rounded-full '><CaretLeft size={18} weight='regular' color='#27272a' /></div>
+        <div className='bg-white z-50 opacity-100  rounded-full '><CaretLeft size={24} weight='regular' color='#27272a' /></div>
       </button>
       
       <img
@@ -54,7 +54,7 @@ const PossiblePictures = () => {
         /> 
       
       <button onClick={handleNextClick}>
-      <div className='bg-white z-50 opacity-100 rounded-full'><CaretRight size={18} weight='regular' color='#27272a'/></div>
+      <div className='bg-white z-50 opacity-100 rounded-full'><CaretRight size={24} weight='regular' color='#27272a'/></div>
       </button>
     </div>
   )

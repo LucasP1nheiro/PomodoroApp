@@ -49,9 +49,9 @@ const Popover = ({ popoverDisplay }: PopoverProps) => {
     <div
 
       style={{ display: popoverDisplay }}
-      className="bg-[url('src/assets/sky.jpg')] md:bg-[url('')] h-screen w-screen sm:z-50 bg-zinc-700 md:bg-white/20 md:h-2/3  md:w-1/3 xl:w-1/4 rounded-lg absolute right-0 bottom-0 md:right-10  md:bottom-44"
+      className="bg-[url('src/assets/sky.jpg')] md:bg-[url('')] h-screen w-screen sm:z-50 bg-zinc-700 md:bg-white/20 md:h-2/3  md:w-2/5 xl:w-1/4 rounded-lg absolute right-0 bottom-0 md:right-10  md:bottom-44"
     >
-      <div className="h-full w-full flex flex-col justify-start sm:justify-around lg:py-5 items-center py-10">
+      <div className="h-full w-full flex flex-col justify-around sm:justify-around lg:py-5 items-center py-10">
         <div className="flex flex-col gap-4 pl-12 pt-10 h-1/3 w-5/6">
           <h2 className="text-white">Pomodoro</h2>
           <CustomTimer description='Pomodoro' activateButton={activateButton} unactivateButton={unactivateButton}/>
@@ -60,7 +60,7 @@ const Popover = ({ popoverDisplay }: PopoverProps) => {
           <h2 className="text-white">Long Break</h2>
           <CustomTimer description='Long Break' activateButton={activateButton} unactivateButton={unactivateButton}/>
         </div>
-        <div className="flex w-4/5 gap-5 lg:gap-10 justify-center h-1/2 items-end pb-16 md:pb-5">
+        <div className="flex w-4/5 gap-5 lg:gap-10 justify-center h-1/2 items-end py-20 md:pb-5">
           <button
             className="p-3 h-14  bg-zinc-700 border-2 rounded-xl hover:bg-zinc-800 transition-all duration-500 "
             onClick={() => setActivateButton(true)}

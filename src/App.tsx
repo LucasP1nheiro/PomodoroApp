@@ -36,7 +36,7 @@ function App() {
   return (
     <div
       style={{backgroundImage: `url(${picture})`}}
-      className="w-screen h-screen flex flex-col justify-between lg:py-0 py-10 lg:justify-around items-center bg-no-repeat bg-cover bg-center bg-fixed">
+      className="w-screen h-screen flex flex-col justify-between lg:py-0 py-10 lg:justify-around items-center bg-no-repeat bg-cover bg-center bg-fixed gap-8">
       <Header handleChange={handleChange} />
       <div className="flex justify-center md:gap-60 xl:px-20 w-full">
         <Timer description={description} />
