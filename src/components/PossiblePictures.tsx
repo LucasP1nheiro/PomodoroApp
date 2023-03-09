@@ -22,9 +22,9 @@ import sky from '../assets/sky.jpg'
 
 
 const PossiblePictures = () => {
-  const pictureArray = [ forest, sunset, trees, bloodymoon, bridge, lake, landscape, sky, blue]
+  const pictureArray = [blue, forest, sunset, trees, bloodymoon, bridge, lake, landscape, sky]
   const { setPicture, picture } = useContext(PicturesContext)
-  const [reRender, setReRender] = useState(0)
+  
 
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -41,7 +41,7 @@ const PossiblePictures = () => {
     setPicture(image)
   }
 
-  console.log(pictureArray)
+  
   return (
     <div className="h-full w-full flex justify-center gap-2 sm:gap-4 md:gap-2 lg:gap-4 items-center md:py-0 sm:py-1">
       <button onClick={handlePrevClick}>

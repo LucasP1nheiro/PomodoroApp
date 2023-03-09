@@ -1,4 +1,5 @@
 import { createContext, useState } from 'react';
+import blue from '../assets/blue.jpg'
 
 interface PicturesContextProps {
     picture: string;
@@ -17,7 +18,7 @@ export const PicturesContext = createContext<PicturesContextProps>(
 );
 
 export default function PicturesContextProvider({ children }: PicturesContextProviderProps) { 
-    const [picture, setPicture] = useState('src/assets/blue.jpg');
+    const [picture, setPicture] = useState(blue);
 
     function handleChangePicture(newPicture: string) {
         setPicture(newPicture);

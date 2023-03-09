@@ -6,16 +6,17 @@ import Timer from './components/Timer'
 import { PicturesContext } from './context/PicturesContext'
 
 //pictures
-import aurora from 'src/assets/aurora.jpg'
-import blue from 'src/assets/blue.jpg'
-import forest from 'src/assets/forest.jpg'
-import sunset from 'src/assets/sunset.jpg'
-import trees from 'src/assets/trees.jpg'
-import bloodymoon from 'src/assets/bloodymoon.jpg'
-import bridge from '../assets/bridge.jpg'
-import lake from '../assets/lake.jpg'
-import landscape from '../assets/landscape.jpg'
-import sky from '../assets/sky.jpg'
+
+import blue from './assets/blue.jpg'
+import forest from './assets/forest.jpg'
+import sunset from './assets/sunset.jpg'
+import trees from './assets/trees.jpg'
+import bloodymoon from './assets/bloodymoon.jpg'
+import bridge from './assets/bridge.jpg'
+import lake from './assets/lake.jpg'
+import landscape from './assets/landscape.jpg'
+import sky from './assets/sky.jpg'
+import PossiblePictures from './components/PossiblePictures'
 
 
 
@@ -32,6 +33,8 @@ function App() {
   function changeDisplay() {
     setPopoverDisplay(popoverDisplay === "none"? "block" : "none")
   }
+
+  
 
   return (
     <div
