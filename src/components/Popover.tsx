@@ -7,16 +7,16 @@ import { PicturesContext } from '../context/PicturesContext'
 import {DurationContext} from '../context/DurationContext'
 
 //pictures
-import aurora from 'src/assets/aurora.jpg'
-import blue from 'src/assets/blue.jpg'
-import forest from 'src/assets/forest.jpg'
-import sunset from 'src/assets/sunset.jpg'
-import trees from 'src/assets/trees.jpg'
-import bloodymoon from 'src/assets/bloodymoon.jpg'
+import aurora from '../assets/aurora.jpg'
+import blue from '../assets/blue.jpg'
+import forest from '../assets/forest.jpg'
+import sunset from '../assets/sunset.jpg'
+import trees from '../assets/trees.jpg'
+import bloodymoon from '../assets/bloodymoon.jpg'
 import bridge from '../assets/bridge.jpg'
 import lake from '../assets/lake.jpg'
 import landscape from '../assets/landscape.jpg'
-import sky from '../assets/sky.jpg'
+import sky from '/src/assets/sky.jpg'
 
 
 interface PopoverProps {
@@ -44,12 +44,14 @@ const Popover = ({ popoverDisplay }: PopoverProps) => {
     setPomodoroDuration(25 * 60)
   }
 
+  
   return (
     
+    
     <div
-
+      
       style={{ display: popoverDisplay }}
-      className="bg-[url('src/assets/sky.jpg')] md:bg-[url('')] h-screen w-screen sm:z-50 bg-zinc-700 md:bg-white/20 md:h-2/3  md:w-2/5 xl:w-1/4 rounded-lg absolute right-0 bottom-0 md:right-10  md:bottom-44"
+      className={`bg-[url('/src/assets/sky.jpg')] md:bg-[url('')] h-screen w-screen sm:z-50 bg-zinc-700 md:bg-white/20 md:h-2/3  md:w-2/5 xl:w-1/4 md:rounded-lg fixed right-0 bottom-0 md:right-10  md:bottom-44`}
     >
       <div className="h-full w-full flex flex-col justify-around sm:justify-around lg:py-5 items-center py-10">
         <div className="flex flex-col gap-4 pl-12 pt-10 h-1/3 w-5/6">
