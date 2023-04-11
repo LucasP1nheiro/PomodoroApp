@@ -1,3 +1,19 @@
+<div align="center">
+  <h2>
+    <a href="https://pomodoro-app-sepia.vercel.app">pomodoro-app-sepia.vercel.app</a>
+  </h2>
+  <br>
+  <div>
+    <img src="public/thumbnail.svg" height=500/>
+  </div>
+  <br>
+  <div >
+    <p>Built with <a href="https://reactjs.org/">React</a> and <a href="https://tailwindcss.com/">Tailwind</a></p>
+  </div>
+</div>
+
+
+
 # Pomodoro App 🍅⏰
 
 The Pomodoro app is a productivity tool that helps you focus on your work by breaking it down into intervals. The app consists of a timer that alternates between work and break periods, with each period lasting for a fixed amount of time. You can customize the duration of each period to suit your needs.
