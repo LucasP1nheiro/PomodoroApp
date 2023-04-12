@@ -44,6 +44,7 @@ Beyond that, you can choose different background images to have a pleasant exper
 ## Technologies 💻
 
 This app was built using the following technologies:
-
-- React ⚛️
-- Tailwind CSS 🎨
+- [React](https://reactjs.org/)⚛️
+- [Tailwind CSS](https://tailwindcss.com/) 🎨
+- [Radix UI](https://radix-ui.com/) 🧰
+- [React Countdown Circle Timer](https://www.npmjs.com/package/react-countdown-circle-timer) ⏲️
